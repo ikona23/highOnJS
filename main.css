@@ -1,0 +1,27 @@
+body{
+/*background-color: #1A1831;*/
+}
+
+#btns button{
+	back
+}
+#boxes{
+
+}
+.box {
+	width:200px;
+	height: 200px;
+	background-color:red;
+	position: relative;
+	margin:4px;
+	display:inline-block;
+}
+h4.textTrip.center{
+/*	background: green;*/
+color:#1A1831;;
+}
+
+.red {background-color:red;}
+.blue {background-color:blue;}
+.violet {background-color:green;}
+.yellow {background-color:yellow;}
