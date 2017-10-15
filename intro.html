@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Learn with us</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">learn stuff with us</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <button class="btn-floating btn-large waves-effect waves-light red" type="submit" name="action" onclick="goIndex()">
+        <i class="material-icons right ">arrow_back</i>
+     </button>
+    </div>
+  </div>
+
+  <div class="container" id="newText">
+    <div class="section">
+     <div class="row center">
+              <div class="row">
+              <h4>Lesson one:</h4>
+              <h6>Question one:</h6>
+               <form class="col s12">
+                <ul>
+                   <div class="input-field col s4">
+                      <input id="icon_prefix2" type="text" class="validate">
+                      <label for="icon_prefix">What is cell theory? </label>
+                      <p>
+                        Cell theory states that the cell is the basic unit of living organisms.
+                      </p>
+                    </div>
+                </ul>
+              </form>
+             </div>
+        <h5 class="header col s12 light" id="texted"> </h5>
+    </div>
+
+      <div class="row center">
+       <div class="textOrange">
+        <a href="#" id="download-button" onclick="getNames(),gotoLink() " class="btn-large waves-effect play waves-light orange">Get Started
+        <i class="material-icons right ">play_arrow</i>
+        </a>
+      </div>
+      <br><br>
+
+    </div>
+
+<h4 class="textTrip center">
+  Let's learn something new
+</h4>
+      <!--   Icon Section   -->
+      <div class="row center">
+    <div id="boxes">
+      <div id = "buttons">
+      <button class="btn waves-effect waves-light" type="submit" name="action" onclick="dropTest()">Play
+        <i class="material-icons right ">play_arrow</i>
+     </button>
+
+     <button class="btn waves-effect waves-light stop" onclick="buttadd" type="submit" name="action">Stop
+        <i class="material-icons right ">stop</i>
+     </button>
+    </div>
+    <div class="col-s12">
+
+      <div class="col-s4 card cyan lighten-2 box green z-depth-3" >  
+       <div class="card" onclick="gotopage()">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/biol.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Atoms<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+    </div>
+
+     <div class="col-s4 card cyan lighten-2 box green z-depth-3" >  
+       <div class="card" onclick="gotopage()">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/biol.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4" style="font-size="12px">Elements<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+    </div>
+
+ <div class="col-s4 card cyan lighten-2 box green z-depth-3" >  
+       <div class="card" onclick="gotopage()">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/biol.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Matter<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    </div>
+  
+    </div>
+    <br><br>
+  </div>
+</div>
+
+  <!-- <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+       
+      </div>
+    </div>
+  </footer> -->
+<!-- <script>
+anime({
+  tergets: 'div.box.red',
+  translateY: [
+  {value:200, duration:5000},
+  {value:0, duration: 800}
+  ],
+  rotate:{
+    value: '1turn',
+    easing: 'easeInOutSine'
+  }
+});
+</script> -->
+
+  <!--  Scripts-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
+  <script src="main.js"></script>
+
+  <script type="text/javascript">
+    
+$(document).ready(function() {
+    Materialize.updateTextFields();
+  });
+ $(document).ready(function() {
+    $('select').material_select();
+  });
+
+  </script>
+
+  </body>
+</html>

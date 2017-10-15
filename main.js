@@ -1,11 +1,3 @@
-//console.log(document.head)
-//console.log(document.forms[0])
-//console.log(document.links)
-//console.log(document.getElementById())
-
-//document.getElementById('texted')
-
-
 
 var playPause = anime ({
 	targets: 'div.box',
@@ -22,37 +14,38 @@ var playPause = anime ({
 		autoplay:false
 })
 
-
-// var textTrip = anime ({
-// 	targets: 'div.text',
-// 	translateY: [
-// 	{value:200, duration:2000},
-// 	{value:0, duration: 800}
-// 	],
-// 	rotate:{
-// 		value: '1turn',
-// 		easing: 'easeInOutSine'
-// 	},
-// 	delay: function(el, i, l){
-// 		return i * 1000},
-// 		autoplay:false
-// })
-
 function getNames(){
 	var n = document.getElementById("icon_prefix").value
 	var s = document.getElementById("icon_prefix2").value
     var m = document.getElementById("icon_prefix4").textContent
 	var t = document.getElementById('texted')
+	if (n == null || n=="",s==null || s==""){
+		console.log("nah")
+		alert("choose some stuff");
+		return false;
+	}else{
     t.textContent = 'Hi' + " " + n + " " + s + " " + "you choose" + " " + m
+	}
 }
 
 function addBox(){
 	var x = document.getElementById('newText')
 //	console.log(x)
 }
+
+function gotoLink(){
+	var x = document.getElementById('goLink')
+	x = window.location.href='file:///Users/devatman/devLove/learnJs/Highonjs/intro.html'
+}
+function gotopage1(){
+var x = document.getElementById('goToPage1')
+	x = window.location.href='file:///Users/devatman/devLove/learnJs/Highonjs/page1.html'
+}
+function goIndex(){
+var x = document.getElementById('goindex')
+	x = window.location.href='file:///Users/devatman/devLove/learnJs/Highonjs/index.html'
+}
 addBox()
-
-
 
 
 function dropTest(){
@@ -61,7 +54,7 @@ function dropTest(){
 		translateY: -220,
   		backgroundColor: '#FFF',
   		borderRadius: 5,
-  		width:350,
+  		width:450,
 
   		easing: 'easeInOutQuad',
   		backgroundColor: [

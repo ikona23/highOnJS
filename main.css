@@ -1,5 +1,6 @@
 body{
-/*background-color: #1A1831;*/
+background-color:#6A759B;
+/*background-image:url("images/zen.jpg");*/
 }
 
 #btns button{
@@ -9,9 +10,7 @@ body{
 
 }
 .box {
-	width:200px;
-	height: 200px;
-	background-color:red;
+	width:250px;
 	position: relative;
 	margin:4px;
 	display:inline-block;
@@ -21,7 +20,7 @@ h4.textTrip.center{
 color:#1A1831;;
 }
 
-.red {background-color:red;}
-.blue {background-color:blue;}
-.violet {background-color:green;}
-.yellow {background-color:yellow;}
+.red {background-color:white;}
+.blue {background-color:white;}
+.violet {background-color:white;}
+.yellow {background-color:white;}
