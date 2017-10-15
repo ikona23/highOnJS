@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Starter Template - Materialize</title>
+  <title>Learn with us</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -27,9 +27,36 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center orange-text">Animate</h1>
       <div class="row center">
-        <h5 class="header col s12 light">let's animate</h5>
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s4">
+                      <i class="material-icons prefix">account_circle</i>
+                      <input id="icon_prefix" type="text" class="validate">
+                      <label for="icon_prefix">First Name</label>
+                    </div>
+                    <div class="input-field col s4">
+                      <input id="icon_prefix2" type="text" class="validate">
+                      <label for="icon_prefix">Second Name</label>
+                    </div>
+                    <div class="input-field col s4">
+                  <select>
+                    <option value="" disabled selected>Take the lesson</option>
+                    <option id="icon_prefix4" value="1">HTML5</option>
+                    <option id="icon_prefix4" value="2">CSS3</option>
+                    <option id="icon_prefix4" value="3">JavaScript</option>
+                  </select>
+                  <label>Choose your topic</label>
+                </div>
+                  </div>
+
+        <button class="btn-floating btn-large waves-effect waves-light red" type="submit" name="action" onclick="getNames()">
+        <i class="material-icons right ">add</i>
+     </button>
+                </form>
+      </div>
+        <h5 class="header col s12 light" id="texted"> </h5>
       </div>
       <div class="row center">
        <div class="textOrange">
@@ -42,7 +69,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container" id="newText">
     <div class="section">
 
 <h4 class="textTrip center">
@@ -62,51 +89,12 @@
 
     </div>
       <div class="box red">
-        <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
         <h5 class="boxNames">HTML</h5>
       </div>
       <div class="box green">
-        <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
         <h5 class="boxNames">CSS3</h5>
       </div>
       <div class="box violet">
-        <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
         <h5 class="boxNames">JavaScript</h5>
       </div>
 
@@ -139,13 +127,19 @@ anime({
 </script> -->
 
   <!--  Scripts-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
   <script src="main.js"></script>
 
   <script type="text/javascript">
     
-
+$(document).ready(function() {
+    Materialize.updateTextFields();
+  });
+ $(document).ready(function() {
+    $('select').material_select();
+  });
 
   </script>
 
