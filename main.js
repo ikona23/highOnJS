@@ -14,6 +14,26 @@ var playPause = anime ({
 		autoplay:false
 })
 
+function myFunction() {
+    var text;
+    var fruits = document.getElementById("myInput").value;
+
+    switch(fruits) {
+        case "Biology":
+            text = "Biology is a good answer!";
+        break;
+        case "Orange":
+        text = "I am not a fan of orange.";
+        break;
+        case "Apple":
+        text = "How you like them apples?";
+        break;
+        default:
+        text = "I have never heard of that fruit...";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+
 function getNames(){
 	var n = document.getElementById("icon_prefix").value
 	var s = document.getElementById("icon_prefix2").value

@@ -1,118 +1,41 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Learn with us</title>
-
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <meta charset="utf-8">
+  <title>Issue Tracker</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <link href="main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- First include jquery js -->
+  <!-- Then include bootstrap js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
 </head>
+
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">learn stuff with us</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
+  <div class="container">
+      <nav class="menu">
+        
+         <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+         <label class="menu-open-button" for="menu-open">
+          <span class="lines line-1"></span>
+          <span class="lines line-2"></span>
+          <span class="lines line-3"></span>
+         </label>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <div class="row center">
-              <div class="row">
-                <form class="col s12">
-                  <div class="row prfx">
-                    <div class="input-field col s4">
-                      <i class="material-icons prefix">account_circle</i>
-                      <input id="icon_prefix" type="text" class="validate">
-                      <label for="icon_prefix">First Name</label>
-                    </div>
-                    <div class="input-field col s4">
-                      <input id="icon_prefix2" type="text" class="validate">
-                      <label for="icon_prefix">Second Name</label>
-                    </div>
-                    <div class="input-field col s4">
-                  <select id="icon_prefix4">
-                    <option value="" disabled selected>Take the lesson</option>
-                    <option  value="1">HTML5</option>
-                    <option  value="2">CSS3</option>
-                    <option  value="3">JavaScript</option>
-                  </select>
-                  <label>Choose your topic</label>
-                </div>
-                  </div>
-              </form>
-             </div>
-        <h5 class="header col s12 light" id="texted"> </h5>
-    </div>
-  <button class="btn-floating btn-large waves-effect waves-light red" type="submit" name="action" onclick="getNames()">
-        <i class="material-icons right ">add</i>
-     </button>
-                </form>
-      </div>
-        <h5 class="header col s12 light" id="texted"> </h5>
-      </div>
-      <div class="row center">
-      
-
-      <div class="row center">
-       <div class="textOrange">
-        <a href="#" id="download-button" onclick="getNames(),gotoLink() " class="btn-large waves-effect play waves-light orange">Get Started
-        <i class="material-icons right ">play_arrow</i>
-        </a>
-      </div>
-      <br><br>
-
-    </div>
+         <a href="#" class="menu-item blue"> <i class="fa fa-anchor"></i> </a>
+         <a href="#" class="menu-item green"> <i class="fa fa-coffee"></i> </a>
+         <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
+         <a href="#" class="menu-item purple"> <i class="fa fa-microphone"></i> </a>
+         <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
+         <a href="#" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
+      </nav>
   </div>
-</div>
+  <script src="js/app.js"></script>
+  <script src="js/chance.js"></script>
+</body>
 
-  <!-- <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-       
-      </div>
-    </div>
-  </footer> -->
-<!-- <script>
-anime({
-  tergets: 'div.box.red',
-  translateY: [
-  {value:200, duration:5000},
-  {value:0, duration: 800}
-  ],
-  rotate:{
-    value: '1turn',
-    easing: 'easeInOutSine'
-  }
-});
-</script> -->
-
-  <!--  Scripts-->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
-  <script src="main.js"></script>
-
-  <script type="text/javascript">
-    
-$(document).ready(function() {
-    Materialize.updateTextFields();
-  });
- $(document).ready(function() {
-    $('select').material_select();
-  });
-
-  </script>
-
-  </body>
 </html>
